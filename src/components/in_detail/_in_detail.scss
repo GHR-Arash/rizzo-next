@@ -1,0 +1,6 @@
+@import "../../../sass/webpack_deps";
+
+.in-detail__heading {
+  @include h1();
+  padding: 5px;
+}

@@ -70,3 +70,37 @@
 .intro-narrative__author__creds__title {
   @include author-title($min-320);
 }
+
+.in-detail {
+  @include clearfix;
+  margin: 0 auto $gutter;
+}
+
+.in-detail__list {
+  @include clearfix;
+  width: 100rem;
+  margin: 0 auto;
+}
+
+.in-detail__heading {
+  @include h1();
+}
+
+.in-detail__section {
+  display: block;
+  text-align: left;
+  min-width: 20rem;
+  position: relative;
+  min-height: 40rem;
+  float: left;
+  margin: 0 6rem 2rem;
+}
+
+.in-detail__title {
+  font-weight: bold;
+}
+
+.in-detail__link {
+  display: block;
+  margin-top: 2rem;
+}
