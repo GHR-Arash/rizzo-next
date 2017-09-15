@@ -78,8 +78,19 @@
 
 .in-detail__list {
   @include clearfix;
-  width: 100rem;
   margin: 0 auto;
+
+  @media (min-width: $min-480) {
+    width: 50rem;
+  }
+
+  @media (min-width: $min-960) {
+    width: 75rem;
+  }
+
+  @media (min-width: $min-1290) {
+    width: 100rem;
+  }
 }
 
 .in-detail__heading {
@@ -91,9 +102,13 @@
   text-align: left;
   min-width: 20rem;
   position: relative;
-  min-height: 40rem;
   float: left;
-  margin: 0 6rem 2rem;
+  margin: 2rem 6rem;
+
+  @media (min-width: $min-960) {
+    margin: 0 6rem 2rem;
+    min-height: 40rem;
+  }
 }
 
 .in-detail__title {
